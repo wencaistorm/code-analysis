@@ -1,0 +1,9 @@
+body {
+    font: 13px / 1.4 'microsoft Yahei';
+}
+.markdown-body {
+    font-family: 'microsoft Yahei';
+}
+.markdown-body code, .markdown-body tt {
+    background-color: lightcoral;
+}
