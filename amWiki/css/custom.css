@@ -1,9 +1,23 @@
+/* 个人定制样式，为避免不可预测的冲突，将定制样式保存为一个单独的文件 */
+/* 尽量通过样式覆盖的方法进行样式定制 */
+
 body {
     font: 13px / 1.4 'microsoft Yahei';
 }
 .markdown-body {
     font-family: 'microsoft Yahei';
+    font-size: 18px;
 }
 .markdown-body code, .markdown-body tt {
-    background-color: lightcoral;
+    background-color: #aee0f1;
 }
+
+/* 目录 */
+/* aside .contents {
+    top: 137px;
+    right: 18px;
+}
+aside .contents-list {
+    top: -1px;
+    bottom: auto;
+} */
