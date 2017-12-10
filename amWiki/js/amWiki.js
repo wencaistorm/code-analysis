@@ -55,7 +55,8 @@ $(function () {
             if (winW <= threshold) {
                 $container.removeAttr('style');
             } else {
-                $container.height($win.height() - 70 - 15 - 20 * 2);
+                // 设置 $container 高度为可视区域高度
+                // $container.height($win.height());
             }
         };
         onResize();
@@ -170,8 +171,8 @@ $(function () {
         }, function () {
             $contents.removeClass('hover');
         });
-        //开启滚动条
-        $('.scroller').scrollbar();
+        //开启滚动条 -> 使用浏览器默认滚动条
+        // $('.scroller').scrollbar();
         $('#backTop').on('click', function () {
             $mainInner.scrollTop(0);
         });

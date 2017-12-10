@@ -3,6 +3,8 @@
 
 body {
     font: 13px / 1.4 'microsoft Yahei';
+    height: auto;
+    min-height: 100%;
 }
 .markdown-body {
     font-family: 'microsoft Yahei';
@@ -15,12 +17,52 @@ body {
 .markdown-body pre code {
     font-size: 100%;
 }
+.markdown-body pre {
+    background: #f5f2f0;
+}
+
 /* 目录 */
-/* aside .contents {
-    top: 137px;
-    right: 18px;
+aside .contents {
+    /* top: 137px; */
+    /* right: 18px; */
 }
 aside .contents-list {
-    top: -1px;
-    bottom: auto;
-} */
+    /* top: -1px; */
+    /* bottom: auto; */
+    overflow-y: auto;
+}
+
+.main {
+    width: 720px;
+    margin: 0 auto;
+    /* background: lightslategray; */
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 250px;
+}
+.header .header-inner {
+    margin: 0;
+}
+/* nav */
+.container .nav {
+    position: fixed;
+    padding-top: 70px;
+    z-index: 10;
+    background-color: #fff;
+}
+.menu-filter, .menu-search {
+    top: 70px;
+}
+.menubar {
+    padding-top: 38px
+}
+
+/* container */
+.container {
+    margin: 0;
+    border: 0;
+}
