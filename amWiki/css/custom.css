@@ -47,6 +47,12 @@ aside .contents-list {
 .header .header-inner {
     margin: 0;
 }
+.header .logo {
+    /* margin-left: 32px; */
+}
+.header .menu-icon {
+    /* display: block; */
+}
 /* nav */
 .container .nav {
     position: fixed;
@@ -65,4 +71,17 @@ aside .contents-list {
 .container {
     margin: 0;
     border: 0;
+}
+
+/* 搜索 */
+.search-results {
+    overflow: auto;
+}
+
+
+@media screen and (max-width: 720px) {
+    .header {
+        width: 100%;
+        position: static;
+    }
 }

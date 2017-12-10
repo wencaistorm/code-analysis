@@ -57,6 +57,8 @@ $(function () {
             } else {
                 // 设置 $container 高度为可视区域高度
                 // $container.height($win.height());
+                // 设置 $container 最小高度为可视区域高度
+                $container.css('min-height', $win.height());
             }
         };
         onResize();
