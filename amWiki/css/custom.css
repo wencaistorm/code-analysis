@@ -6,12 +6,15 @@ body {
 }
 .markdown-body {
     font-family: 'microsoft Yahei';
-    font-size: 18px;
+    font-size: 16px;
 }
 .markdown-body code, .markdown-body tt {
     background-color: #aee0f1;
 }
 
+.markdown-body pre code {
+    font-size: 100%;
+}
 /* 目录 */
 /* aside .contents {
     top: 137px;
