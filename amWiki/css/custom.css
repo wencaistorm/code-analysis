@@ -85,3 +85,46 @@ aside .contents-list {
         position: static;
     }
 }
+
+
+/* scrollbar style */
+body::-webkit-scrollbar {
+    /* 滚动条整体部分，其中的属性有width, height, background, border（就和一个块级元素一样）等。  */
+    width: 12px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-button {
+    /* 滚动条两端的按钮。可以用display: none让其不显示，也可以添加背景图片，颜色改变显示效果。 width:12px; */
+    display: none;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    /* 外层轨道。可以用display: none让其不显示，也可以添加背景图片，颜色改变显示效果。  */
+    border-radius: 20px;
+
+}
+
+body::-webkit-scrollbar-track-piece {
+    /* 内层轨道，滚动条中间部分（除去）。  */
+    background: #fff;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* 滚动条里面可以拖动的那部分  */
+    background: #85868B;
+    /* border-radius: 50px; */
+}
+
+body::-webkit-scrollbar-corner {
+    /* 边角  */
+    background: #fff;
+}
+
+body::-webkit-scrollbar-resizer {
+    /* 定义右下角拖动块的样式  */
+    background: #fff;
+}
+
