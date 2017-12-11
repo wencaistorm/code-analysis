@@ -45,7 +45,7 @@ Backbone.js 的处理方法如下：
 
   ![](assets/01/02-1512710451000.png)
 
-  可以看到，第一个 `Backbone` 的值未发生变化，而引入的 backbone.js 暴露的变量 `Backbone` 已由 `newBackbone` 代替。
+  可以看到，第一个 `Backbone` 的值未发生变化，而引入的 backbone.js 声明的变量 `Backbone` 已由 `newBackbone` 代替。
 
 
 ## 分析
@@ -68,7 +68,7 @@ Backbone.js 的处理方法如下：
 1. 临时变量 `previousBackbone` 重新赋值给 `Backbone` ，让出变量 `Backbone` 的控制权
 2. 将 `this` 返回，并赋值给新声明的变量 `newBackbone` ，那 `this` 又是谁呢？很显然，`this` 是 **调用这个方法时的 `Backbone`**，即 Backbone.js 中声明的那个 `Backbone`
 
-至此，已经完成了变量名冲突的处理，原来的 `Backbone` 仍然叫做 `Backbone` ，后来 Backbone.js 中声明的 `Backbone` 有了新名字：`newBackbone` 。
+至此，已经完成了变量名冲突的处理，原来的 `Backbone` 仍然叫做 `Backbone` ，之后引入的 Backbone.js 中声明的 `Backbone` 有了新名字：`newBackbone` 。
 
 ## 总结
 
